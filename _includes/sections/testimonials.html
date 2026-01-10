@@ -1,0 +1,16 @@
+<section class="section section--alt">
+  <div class="container">
+    <h2 class="h2">Depoimentos</h2>
+    <div class="quotes">
+      {% for t in site.data.testimonials %}
+        <div class="quote">
+          <p>“{{ t.text }}”</p>
+          <div class="muted">— {{ t.author }}</div>
+        </div>
+      {% endfor %}
+    </div>
+    <p class="tiny muted">
+      *Depoimentos devem respeitar ética profissional e privacidade. Use apenas com consentimento.
+    </p>
+  </div>
+</section>

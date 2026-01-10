@@ -1,0 +1,15 @@
+<section id="servicos" class="section">
+  <div class="container">
+    <h2 class="h2">Tratamentos</h2>
+    <p class="text muted">Algumas áreas comuns trabalhadas em psicoterapia:</p>
+
+    <div class="cards">
+      {% for s in site.data.services %}
+        <a class="card card--link" href="{{ s.url | relative_url }}">
+          <div class="card__title">{{ s.title }}</div>
+          <div class="muted">{{ s.desc }}</div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
