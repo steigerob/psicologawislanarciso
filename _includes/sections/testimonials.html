@@ -1,16 +1,29 @@
 <section class="section section--alt">
   <div class="container">
     <h2 class="h2">Depoimentos</h2>
-    <div class="quotes">
+    <div class="quotes" role="region" aria-label="Depoimentos (role para o lado)" tabindex="0">
       {% for t in site.data.testimonials %}
-        <div class="quote">
+        <blockquote class="quote">
+          <header class="quote__header">
+            <img
+              class="quote__avatar"
+              src="/assets/images/testimonials/{{ t.image }}"
+              alt="Foto de {{ t.name }}"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="quote__meta">
+              <div class="quote__name">{{ t.name }}</div>
+              <div class="quote__desc muted">{{ t.desc }}</div>
+              <div class="quote__rating" aria-hidden="true">★★★★★</div>
+            </div>
+          </header>
           <p>“{{ t.text }}”</p>
-          <div class="muted">— {{ t.author }}</div>
-        </div>
+        </blockquote>
       {% endfor %}
     </div>
     <p class="tiny muted">
-      *Depoimentos devem respeitar ética profissional e privacidade. Use apenas com consentimento.
+      *Os depoimentos são experiências pessoais e tem consentimento dos clientes.
     </p>
   </div>
 </section>

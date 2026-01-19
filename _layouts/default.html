@@ -7,12 +7,83 @@
       {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
     </title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
 
   <body>
+    {% include header.html %}
     <main>
       {{ content }}
     </main>
+    {% include footer.html %}
+    <script>
+      (function () {
+        function enhanceHorizontalScroll(container) {
+          if (!container) return;
+          var maxScrollLeft = container.scrollWidth - container.clientWidth;
+          if (maxScrollLeft <= 0) return;
+
+          container.addEventListener(
+            "wheel",
+            function (e) {
+              if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+              maxScrollLeft = container.scrollWidth - container.clientWidth;
+              if (maxScrollLeft <= 0) return;
+
+              var before = container.scrollLeft;
+              container.scrollLeft += e.deltaY;
+              if (container.scrollLeft !== before) e.preventDefault();
+            },
+            { passive: false }
+          );
+
+          var isDragging = false;
+          var startX = 0;
+          var startScrollLeft = 0;
+          var pointerId = null;
+
+          container.addEventListener("pointerdown", function (e) {
+            if (e.pointerType !== "mouse") return;
+            if (e.button !== 0) return;
+            pointerId = e.pointerId;
+            isDragging = true;
+            startX = e.clientX;
+            startScrollLeft = container.scrollLeft;
+            container.classList.add("is-dragging");
+            container.setPointerCapture(pointerId);
+          });
+
+          container.addEventListener("pointermove", function (e) {
+            if (!isDragging) return;
+            if (pointerId !== e.pointerId) return;
+            var dx = e.clientX - startX;
+            container.scrollLeft = startScrollLeft - dx;
+          });
+
+          function stopDrag(e) {
+            if (!isDragging) return;
+            if (pointerId !== null && e && pointerId !== e.pointerId) return;
+            isDragging = false;
+            pointerId = null;
+            container.classList.remove("is-dragging");
+          }
+
+          container.addEventListener("pointerup", stopDrag);
+          container.addEventListener("pointercancel", stopDrag);
+          container.addEventListener("pointerleave", stopDrag);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var containers = document.querySelectorAll(".quotes");
+          for (var i = 0; i < containers.length; i++) {
+            enhanceHorizontalScroll(containers[i]);
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

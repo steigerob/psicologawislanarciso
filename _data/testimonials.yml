@@ -1,5 +1,32 @@
-- text: Me senti acolhida e consegui organizar minhas emoções.
-  author: "Paciente (inicial)"
+- text: 'Ser imigrante pode ser muito, muito, muito estressante: imagine lidar com um mundo novo e desconhecido todos os dias? Imagine ter que começar do novo em um novo país? 
+Mesmo que a língua não seja uma das maiores dificuldades, começar de novo implica em fazer uma nova vida: amigos, familiares, trabalho, pertencimento... questões como "quem sou eu?" para o imigrante, ganham o peso maior, porque não se faz uma vida nova de uma hora pra outra. Leva tempo para vc criar laços, afetos, uma trajetória profissional consolidada. 
+Isso sem falar nas questões burocráticas: um simples pedaço de papel que vai te dar direito a um médico, um trabalho, uma moradia digna pode tornar essa tarefa bem mais complexa e demorada. 
+No seu  país de origem, mesmo com os problemas você já tem tudo isso. Fora dele, você precisa construir tudo do zero (ou perto disso). 
+Ter atendimento psicológico é mais do que essencial pra qualquer um que deseja ter mais equilíbrio emocional para lidar com os altos e baixos dessa estrada. 
+Hoje, morando fora do Brasil há mais de oito anos, sou um defensor fiel da psicoterapia, que já faço há mais de dois anos. A psicoterapia te ajuda a ter mais suporte emocional para lidar com a vida aqui fora e quando o profissional é especializado em questões de imigração, ele/ela tem melhor condição de entender a dor que só um imigrante passa, afinal, ele vive na pele tudo isso.
+Eu paro tudo no mundo, todas as semanas, para falar com minha psicóloga: é inegociável. Minha saúde mental é prioridade.'
+  name: Fausto
+  desc: De Brasil, imigrou pra Portugal há X anos
+  image: fausto.png
 
-- text: A terapia me ajudou a colocar limites e melhorar meus relacionamentos.
-  author: "Paciente (inicial)"
+- text: '1ª versão: “Viver fora do meu país natal por mais de dez anos, em três países diferentes, trouxe muitas conquistas, mas também desafios emocionais importantes. Ao longo desse processo, enfrentei períodos de solidão, dificuldades nos relacionamentos, a ausência do sentimento de lar, conflitos em convivências compartilhadas, além de insegurança, sensação de incapacidade em processos seletivos e uma saudade constante de casa.
+A psicoterapia foi fundamental para atravessar esses momentos. Por meio dela, consegui compreender melhor minhas emoções, ressignificar experiências e, principalmente, desenvolver ferramentas práticas para lidar com crises, inseguranças e mudanças constantes. A terapia me ajudou a me fortalecer emocionalmente e a seguir minha trajetória como imigrante com mais consciência, equilíbrio e autonomia.”'
+  name: Lucas
+  desc: Mora em Barcelona, migrante há 3 anos
+  image: lucas.png
+
+- text: 'Imigrar foi, para mim, um processo solitário e desafiador. Envolveu dar alguns passos atrás para, então, conseguir avançar. Envolveu lidar diariamente com diferenças e rejeições. E, apesar de todas as dificuldades, exigiu um processo contínuo de redescoberta e reinvenção.
+A psicoterapia foi um apoio fundamental nesse percurso. Ter um espaço de escuta qualificada e acolhedora permitiu atravessar esse processo com mais consciência e cuidado. O olhar profissional, especialmente de quem já vivenciou essa transição, fez toda a diferença.'
+  name: Heloísa
+  desc: Casada com um fazendeiro de bacaria
+  image: heloisa.jpg
+
+- text: 'Através da terapia, compreendi que não temo o desconhecido, pois carrego comigo um histórico de superações. Com o auxílio psicológico, cada dificuldade que surge é enfrentada com a confiança de quem já transformou obstáculos em conquistas e psicóloga ajuda a perceber que temos as ferramentas necessárias para atravessar qualquer nova tempestade, que sempre aparece na vida do imigrante.'
+  name: Alexia
+  desc: Bibliotecária e bio-dançarina profissional
+  image: alexia.png
+
+- text: 'terapia pra mim ela é muito importante porque  faz com que eu não me sinta completamente separado, completamente sem apoio sobretudo porque eu saí do Brasil cheguei a Portugal e fiz meu processo de imigração sozinho então, em muitos momentos da minha vida eu me senti sozinho, sem uma base com  que eu poderia contar, que eu poderia pedir conselho pra eu desabafar. É claro que a minha família do Brasil continua lá meus amigos do Brasil e todos eles vão contatáveis por mensagem telefone Mas mesmo  assim a gente ainda se sente só e sente que muitas vezes eles não vão conseguir perceber o meu contexto a situação em que eu estou e que por isso gente não vai se conectar tanto, então É muito importante  ter fazer participar fazer que a gente sabe que sabe sobre o contesse que a gente está inserido sabe um pouco sobre a sobre nossa história tempo que a gente pra falar sobre sobre a gente pra falar sobre mim sobre minha vida isso sinto bem melhor isso me ajudou bastante'
+  name: Roberto
+  desc: Estudando em Coimbra
+  image: roberto.jpg
